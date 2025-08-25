@@ -8,7 +8,7 @@ const NewsApp = () => {
 
     const [search, setSearch] = useState("world");
     const [newsData, setNewsData] = useState(null);
-    const API_KEY = "61a1c6955c884f75bfc1a14b249d91f5";
+    const API_KEY = import.meta.env.NEWSAPI;
 
     const getData = async (query) => {
         const searchCust = query || search
