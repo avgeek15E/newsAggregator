@@ -31,8 +31,7 @@ const Cards = ({ data }) => {
                     <div className="cardContent">
                         {/* ✅ Title is now clickable */}
                         <p>
-                            <a 
-                                href={article.url} 
+                            <a href={article.url} 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 style={{ 
@@ -41,8 +40,7 @@ const Cards = ({ data }) => {
                                     textDecoration: "none" 
                                 }}
                                 onMouseOver={(e) => e.currentTarget.style.textDecoration = "underline"}
-                                onMouseOut={(e) => e.currentTarget.style.textDecoration = "none"}
-                            >
+                                onMouseOut={(e) => e.currentTarget.style.textDecoration = "none"}>
                                 {article.title}
                             </a>
                         </p>
@@ -50,11 +48,9 @@ const Cards = ({ data }) => {
                         <p>{article.description}</p>
 
                         {/* Optional "Read More" link */}
-                        <a
-                            href={article.url}
+                        <a href={article.url}
                             target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                            rel="noopener noreferrer">
                             Read More →
                         </a>
                     </div>

@@ -8,7 +8,7 @@ const NewsApp = () => {
 
     const [search, setSearch] = useState("world");
     const [newsData, setNewsData] = useState(null);
-    const API_KEY = import.meta.env.NEWSAPI;
+    const API_KEY = import.meta.env.VITE_NEWSAPI;
 
     const getData = async (query) => {
         const searchCust = query || search
@@ -80,7 +80,7 @@ const NewsApp = () => {
             </div>
 
           <div>
-              <Cards data={newsData}/>
+              {newsData ? <Cards data={newsData}/> : null}
           </div>
     </div>
   )
