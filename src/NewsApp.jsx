@@ -30,7 +30,6 @@ const NewsApp = () => {
     }
 
     const handleCategoryClick = (cat) => {
-        setSearch(cat);
         getData(cat);
     }
 

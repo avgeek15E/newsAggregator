@@ -7,7 +7,6 @@ const Cards = ({ data }) => {
             {data && data.map(article => (
                 <div className="card" key={article.url}>
                     
-                    {/* Image */}
                     {article.urlToImage ? (
                         <img
                             src={article.urlToImage}
@@ -27,9 +26,7 @@ const Cards = ({ data }) => {
                         </div>
                     )}
 
-                    {/* Content */}
                     <div className="cardContent">
-                        {/* ✅ Title is now clickable */}
                         <p>
                             <a href={article.url} 
                                 target="_blank" 
@@ -46,8 +43,7 @@ const Cards = ({ data }) => {
                         </p>
 
                         <p>{article.description}</p>
-
-                        {/* Optional "Read More" link */}
+                        
                         <a href={article.url}
                             target="_blank"
                             rel="noopener noreferrer">
